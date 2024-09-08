@@ -16,11 +16,14 @@
                 <textarea id="sourceWord" class="form-control" placeholder="Введите слово на русском языке"></textarea>
             </div>
             <div class="col-md-6">
-                <textarea id="translatedWord" class="form-control" placeholder="Перевод на хновский язык" readonly></textarea>
+                <div class="input-group">
+                    <textarea id="translatedWord" class="form-control" placeholder="Перевод на хновский язык" readonly></textarea>
+                    <button id="speakButton" class="btn btn-primary" onclick="speak()">🔊</button>
+                </div>
             </div>
         </div>
         <div id="description" class="mt-3"></div>
-        <button class="btn btn-primary mt-4" onclick="translater()">Перевести</button>
+        <button id="translateButton" class="btn btn-primary mt-4" onclick="translater()">Перевести</button>
     </div>
 
     <script src="js/app.js"></script>
